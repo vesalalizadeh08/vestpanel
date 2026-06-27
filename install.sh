@@ -42,7 +42,8 @@ HASH=$(php -r "echo password_hash('$PASSWORD', PASSWORD_DEFAULT);")
 USER_BASE64=$(echo -n "$USERNAME" | base64)
 
 # دانلود فایل قالب از ریپازیتوری (لینک خام)
-TEMPLATE_URL="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/panel.template.php"
+# *** مهم: آدرس زیر را به مخزن خودتان تغییر دهید ***
+TEMPLATE_URL="https://raw.githubusercontent.com/vesalalizadeh08/vestpanel/main/panel.template.php"
 curl -sSL "$TEMPLATE_URL" -o /tmp/panel.template.php
 
 # جایگزینی متغیرها
